@@ -29,7 +29,7 @@ export function useRuns(uid) {
                 id: doc.id,
                 ...doc.data()
             }));
-            console.log("Snapshot fired. Docs found:", snapshot.docs.length); // Log the number of documents found in the snapshot
+            // console.log("Snapshot fired. Docs found:", snapshot.docs.length); // Log the number of documents found in the snapshot
             setRuns(runsData);
             setLoading(false);
         }, (error) => {
